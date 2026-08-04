@@ -13,7 +13,6 @@ public class Union {
                     ans.add(arr1[i]);
                 }
                 i++;
-
             } else {
                 if (ans.size() == 0 || ans.get(ans.size() - 1) != arr2[j]) {
                     ans.add(arr2[j]);
@@ -26,9 +25,10 @@ public class Union {
                 ans.add(arr1[i]);
             }
             i++;
+
+
         }
         while (j < arr2.length) {
-
             if (ans.size() == 0 || ans.get(ans.size() - 1) != arr2[j]) {
                 ans.add(arr2[j]);
             }
