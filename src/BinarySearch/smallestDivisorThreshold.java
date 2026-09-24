@@ -40,6 +40,7 @@ public class smallestDivisorThreshold {
         return answer;
     }
 
+
     static void main(String[] args) {
         int []nums={1,2,5,9};
         int threshold=6;
