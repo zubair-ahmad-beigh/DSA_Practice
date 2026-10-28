@@ -4,17 +4,13 @@ public class reverseDLL {
     static Node reverseDLL(Node head) {
         Node temp = head;
         Node newHead = null;
-
         while (temp != null) {
             Node nextNode = temp.next;
-
             temp.next = temp.prev;
             temp.prev = nextNode;
-
             newHead = temp;
             temp = nextNode;
         }
-
         return newHead;
     }
     static void printList(Node head){
@@ -28,7 +24,6 @@ public class reverseDLL {
         }
         System.out.println();
     }
-
     static void main(String[] args) {
         Node head=new Node(10);
         Node second=new Node(20);
@@ -39,15 +34,11 @@ public class reverseDLL {
         second.next=third;
         third.prev=second;
         third.next = fourth;
-
         fourth.prev = third;
-
         System.out.print("Original DLL: ");
         printList(head);
-
         head = reverseDLL(head);
-
         System.out.print("Reversed DLL: ");
         printList(head);
     }
-}
+ }
